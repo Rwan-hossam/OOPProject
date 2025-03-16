@@ -1,9 +1,9 @@
 import 'BankAccount.dart';
 
-class Savingaccount extends BankAccount {
+class SavingAccount extends BankAccount {
   final double minBalance = 1000;
   double interestRate = 5;
-  Savingaccount(super.accountNumber, super.holderName, super._balance);
+  SavingAccount(super.accountNumber, super.holderName, super._balance);
   void applyInterest() {
     double interest = getBalance() * (interestRate / 100);
     DepositMoney(interest);
